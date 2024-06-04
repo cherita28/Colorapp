@@ -1,0 +1,50 @@
+<html>
+<head>
+        <title>Color App</title>
+<style> 
+*{font-size:50px;}
+</style>
+
+</head>
+<body>
+<center>
+
+ <h1> Color App </h1>
+<form onsubmit="color()">
+<input type="submit" value="Red"/>
+<input type="submit"value="Green"/>
+<input type="submit" value="Blue"/>
+<input type="submit" value="Pink"/>
+<input type="submit" value="Orange"/>
+<input type="submit" value="Violet"/>
+
+<script>
+function color()
+{
+event.preventDefault();
+let ele= document.activeElement.value;
+if(ele=="Red")
+document.body.style.backgroundColor="Red";
+
+else if(ele=="Green")
+document.body.style.backgroundColor="Green";
+
+else if(ele=="Blue")
+document.body.style.backgroundColor="Blue";
+
+else if(ele=="Pink")
+document.body.style.backgroundColor="Pink";
+
+else if(ele=="Orange")
+document.body.style.backgroundColor="Orange";
+
+else if(ele=="Violet")
+document.body.style.backgroundColor="Violet";
+}
+</script>
+
+
+
+</center>
+</body>
+</html>
